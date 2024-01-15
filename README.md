@@ -1,8 +1,8 @@
-- Latest Next.js 13 features
+- Latest Next.js features
 - Next.js App Router
 - Next.js Server Actions
 - Client & Server Components
-- TypeScript (Beginner & Intermediate)
+- TypeScript
 - Tailwind CSS
 - Context API
 - Advanced Animations with Framer Motion
