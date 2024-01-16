@@ -2,9 +2,11 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+import gilead from "@/public/gilead-consult.png";
+import editor from "@/public/infostar-editor.png";
+import plan from "@/public/infogate-plan.png";
+import payment from "@/public/infogate-payment.png";
+
 
 export const links = [
   {
@@ -35,52 +37,59 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
+    title: "Bachelor's Degree in Information Technology",
+    location: "Accra, Ghana",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
+      "I am in my final year of pursuing a Bachelor's Degree in Information Technology at Accra Institute of Technology (AIT).I have a consistent 3.16 cumulative GPA.",
     icon: React.createElement(LuGraduationCap),
-    date: "2019",
+    date: "2021 - 2024",
   },
   {
     title: "Front-End Developer",
-    location: "Orlando, FL",
+    location: "Accra, Ghana",
     description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
+      "I worked as an intern front-end developer for Whitsun systems Limited. I also upskilled to the full stack.",
     icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
+    date: "2022",
   },
   {
     title: "Full-Stack Developer",
-    location: "Houston, TX",
+    location: "Accra, Ghana",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
+      "I was assigned the position to work as a full-stack developer for InfoGate.Net. My stack includes React, Next.js, TypeScript, Tailwind and MongoDB. I'm open to full-time opportunities to further contribute and grow in the field.",
     icon: React.createElement(FaReact),
-    date: "2021 - present",
+    date: "2023 - present",
   },
 ] as const;
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "Gilead Consult",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: corpcommentImg,
+      "I crafted a comprehensive UI/UX design using Figma for Gilead Consult. I designed for them a web application solution using modern technologies.",
+    tags: ["React.js", "Javascript", "Express.js", "Tailwind", "PostgreSQL"],
+    imageUrl: gilead,
   },
   {
-    title: "rmtDev",
+    title: "InfoStarfone Project",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
+      "Mobile application builder using drag-and-drop interface within InfoStarfone's online editor. I am the front-end developer. It provides users with option to obtain short codes for IVR.",
     tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: rmtdevImg,
+    imageUrl: editor,
   },
   {
-    title: "Word Analytics",
+    title: "InfoGate.Net UI/UX",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
+      "I design user-friendly payment pages to ensure a seamless and efficient payment processing experience for customers on InfoGate.Net platforms.",
+    tags: ["HTML", "CSS", "SQL"],
+    imageUrl: plan,
+  },
+  {
+    title: "API's and Backend for InfoGate.Net",
+    description:
+      "I establish vital connections for our services by interfacing with APIs (custom and payment gateways). I also manage the backend on Azure.",
+    tags: ["HTML", "CSS", "SQL", "JavaScript", "Azure Services"],
+    imageUrl: payment,
   },
 ] as const;
 
@@ -101,7 +110,6 @@ export const skillsData = [
   "Apollo",
   "Express",
   "PostgreSQL",
-  "Python",
-  "Django",
   "Framer Motion",
 ] as const;
+

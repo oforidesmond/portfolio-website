@@ -30,7 +30,7 @@ export default function About() {
         <span className="font-medium">
           React, Next.js, Node.js, and MongoDB
         </span>
-        . I am also familiar with TypeScript and Prisma. I am always looking to
+        . I am also familiar with TypeScript, Prisma, Express.js and more. I am always looking to
         learn new technologies. Presently, I hold the position of a {" "}
         <span className="font-medium">Software Development Officer</span> at InfoGate.Net, an IT solutions firm.  
         Despite my current role, I am actively seeking a challenging and rewarding{" "}
