@@ -6,6 +6,8 @@ import gilead from "@/public/gilead-consult.png";
 import editor from "@/public/infostar-editor.png";
 import plan from "@/public/infogate-plan.png";
 import payment from "@/public/infogate-payment.png";
+import dshelta from "@/public/dshelta.png";
+
 
 
 export const links = [
@@ -64,17 +66,24 @@ export const experiencesData = [
 
 export const projectsData = [
   {
+    title: "D'Shelta Estates",
+    description:
+      "Offers users a seamless and intuitive experience. Comprehensive property searches based on criteria such as location and property type.",
+    tags: ["React", "Javascript", "Express.js", "Tailwind", "MongoDB", "Redux"],
+    imageUrl: dshelta,
+  },
+  {
     title: "Gilead Consult",
     description:
       "I crafted a comprehensive UI/UX design using Figma for Gilead Consult. I designed for them a web application solution using modern technologies.",
-    tags: ["React.js", "Javascript", "Express.js", "Tailwind", "PostgreSQL"],
+    tags: ["React", "Javascript", "Express.js", "Tailwind", "PostgreSQL"],
     imageUrl: gilead,
   },
   {
     title: "InfoStarfone Project",
     description:
       "Mobile application builder using drag-and-drop interface within InfoStarfone's online editor. I am the front-end developer. It provides users with option to obtain short codes for IVR.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
+    tags: ["React", "TypeScript", "Next", "Tailwind", "Redux"],
     imageUrl: editor,
   },
   {
