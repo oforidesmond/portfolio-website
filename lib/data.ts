@@ -2,13 +2,11 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import hash from "@/public/hash.jpg";
+import hash from "@/public/hash.png";
 import editor from "@/public/infostar-editor.png";
 import plan from "@/public/infogate-plan.png";
 import payment from "@/public/infogate-payment.png";
 import dshelta from "@/public/dshelta.png";
-import { StaticImageData } from "next/image";
-
 
 
 export const links = [
@@ -43,7 +41,7 @@ export const experiencesData = [
     title: "Bachelor's Degree in Information Technology",
     location: "Accra, Ghana",
     description:
-      "I am in my final year of pursuing a Bachelor's Degree in Information Technology at Accra Institute of Technology (AIT).I have a consistent 3.16 cumulative GPA.",
+      "I have attained my Bachelor's Degree in Information Technology at Accra Institute of Technology (AIT). I have a 3.00 cumulative GPA.",
     icon: React.createElement(LuGraduationCap),
     date: "2021 - 2024",
   },
@@ -65,22 +63,14 @@ export const experiencesData = [
   },
 ] as const;
 
-interface Project {
-  title: string;
-  description: string;
-  tags: string[];
-  imageUrl: StaticImageData;
-  url: string;
-}
 
-export const projectsData: Project[] = [
+export const projectsData = [
   {
     title: "Hash Events",
     description:
       "Events platform for tickets buying and event management. Vibrant use of colors and user friendly design.",
     tags: ["React", "Typescript", "Tailwind", "NodeJS", "MongoDB", "Shadcn"],
     imageUrl: hash,
-    url: "https://www.experiencehash.com/",
   },
   {
     title: "D'Shelta Estates",
@@ -88,15 +78,13 @@ export const projectsData: Project[] = [
       "Offers users a seamless and intuitive experience. Comprehensive property searches based on criteria such as location and property type.",
     tags: ["React", "Javascript", "Express.js", "Tailwind", "MongoDB", "Redux"],
     imageUrl: dshelta,
-    url: "https://www.d'sheltaestates.com/",
   },
   {
     title: "InfoStarfone Project",
     description:
-      "Mobile application builder using drag-and-drop interface within InfoStarfone's online editor. I am the front-end developer. It provides users with option to obtain short codes for IVR. (www.infogatenet.com)",
+      "Mobile application builder using drag-and-drop interface within InfoStarfone's online editor. I am the front-end developer. It provides users with option to obtain short codes for IVR.",
     tags: ["React", "TypeScript", "Next", "Tailwind", "Redux"],
     imageUrl: editor,
-    url: "https://www.infogatenet.com/"
   },
   {
     title: "InfoGate.Net UI/UX",
@@ -104,7 +92,6 @@ export const projectsData: Project[] = [
       "I design user-friendly payment pages to ensure a seamless and efficient payment processing experience for customers on InfoGate.Net platforms.",
     tags: ["HTML", "CSS", "SQL"],
     imageUrl: plan,
-    url: "https://www.infogatenet.com/"
   },
   {
     title: "API's and Backend for InfoGate.Net",
@@ -112,7 +99,6 @@ export const projectsData: Project[] = [
       "I establish vital connections for our services by interfacing with APIs (custom and payment gateways). I also manage the backend on Azure.",
     tags: ["HTML", "CSS", "SQL", "JavaScript", "Azure Services"],
     imageUrl: payment,
-    url: "https://www.infogatenet.com/"
   },
 ] as const;
 
