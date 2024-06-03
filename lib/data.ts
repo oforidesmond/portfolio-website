@@ -2,11 +2,12 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import gilead from "@/public/gilead-consult.png";
+import hash from "@/public/hash.jpg";
 import editor from "@/public/infostar-editor.png";
 import plan from "@/public/infogate-plan.png";
 import payment from "@/public/infogate-payment.png";
 import dshelta from "@/public/dshelta.png";
+import { StaticImageData } from "next/image";
 
 
 
@@ -64,27 +65,38 @@ export const experiencesData = [
   },
 ] as const;
 
-export const projectsData = [
+interface Project {
+  title: string;
+  description: string;
+  tags: string[];
+  imageUrl: StaticImageData;
+  url: string;
+}
+
+export const projectsData: Project[] = [
+  {
+    title: "Hash Events",
+    description:
+      "Events platform for tickets buying and event management. Vibrant use of colors and user friendly design.",
+    tags: ["React", "Typescript", "Tailwind", "NodeJS", "MongoDB", "Shadcn"],
+    imageUrl: hash,
+    url: "https://www.experiencehash.com/",
+  },
   {
     title: "D'Shelta Estates",
     description:
       "Offers users a seamless and intuitive experience. Comprehensive property searches based on criteria such as location and property type.",
     tags: ["React", "Javascript", "Express.js", "Tailwind", "MongoDB", "Redux"],
     imageUrl: dshelta,
-  },
-  {
-    title: "Gilead Consult",
-    description:
-      "I crafted a comprehensive UI/UX design using Figma for Gilead Consult. I designed for them a web application solution using modern technologies.",
-    tags: ["React", "Javascript", "Express.js", "Tailwind", "PostgreSQL"],
-    imageUrl: gilead,
+    url: "https://www.d'sheltaestates.com/",
   },
   {
     title: "InfoStarfone Project",
     description:
-      "Mobile application builder using drag-and-drop interface within InfoStarfone's online editor. I am the front-end developer. It provides users with option to obtain short codes for IVR.",
+      "Mobile application builder using drag-and-drop interface within InfoStarfone's online editor. I am the front-end developer. It provides users with option to obtain short codes for IVR. (www.infogatenet.com)",
     tags: ["React", "TypeScript", "Next", "Tailwind", "Redux"],
     imageUrl: editor,
+    url: "https://www.infogatenet.com/"
   },
   {
     title: "InfoGate.Net UI/UX",
@@ -92,6 +104,7 @@ export const projectsData = [
       "I design user-friendly payment pages to ensure a seamless and efficient payment processing experience for customers on InfoGate.Net platforms.",
     tags: ["HTML", "CSS", "SQL"],
     imageUrl: plan,
+    url: "https://www.infogatenet.com/"
   },
   {
     title: "API's and Backend for InfoGate.Net",
@@ -99,8 +112,10 @@ export const projectsData = [
       "I establish vital connections for our services by interfacing with APIs (custom and payment gateways). I also manage the backend on Azure.",
     tags: ["HTML", "CSS", "SQL", "JavaScript", "Azure Services"],
     imageUrl: payment,
+    url: "https://www.infogatenet.com/"
   },
 ] as const;
+
 
 export const skillsData = [
   "HTML",
@@ -121,4 +136,3 @@ export const skillsData = [
   "PostgreSQL",
   "Framer Motion",
 ] as const;
-

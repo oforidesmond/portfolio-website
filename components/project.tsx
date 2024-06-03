@@ -20,6 +20,10 @@ export default function Project({
   });
   const scaleProgess = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
   const opacityProgess = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
+  
+  const handleClick = () => {
+    window.location.href = 'https://www.experiencehash.com/';
+  };
 
   return (
     <motion.div
@@ -50,6 +54,8 @@ export default function Project({
 
         <Image
           src={imageUrl}
+          onClick={handleClick}
+          style={{cursor:'pointer'}}
           alt="Project I worked on"
           quality={95}
           className="absolute hidden sm:block top-8 -right-40 w-[28.25rem] rounded-t-lg shadow-2xl
