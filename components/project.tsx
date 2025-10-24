@@ -12,6 +12,7 @@ export default function Project({
   description,
   tags,
   imageUrl,
+  url,
 }: ProjectProps) {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
@@ -22,7 +23,9 @@ export default function Project({
   const opacityProgess = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
   
   const handleClick = () => {
-    window.location.href = 'https://www.experiencehash.com/';
+    if (url) {
+      window.location.href = url;
+    }
   };
 
   return (
