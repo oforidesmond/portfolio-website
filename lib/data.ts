@@ -110,7 +110,7 @@ export const projectsData = [
   {
     title: "InfoStarfone Project",
     description:
-      "Mobile application builder using drag-and-drop interface within InfoStarfone's online editor. I am the front-end developer. It provides users with option to obtain short codes for IVR.",
+      "Mobile application builder using drag-and-drop interface within InfoStarfone's online editor. Provides users with option to obtain short codes for IVR.",
     tags: ["React", "TypeScript", "Next", "Tailwind", "Redux"],
     imageUrl: editor,
     url: "https://www.infogatenet.com/",
@@ -118,7 +118,7 @@ export const projectsData = [
   {
     title: "InfoGate.Net UI/UX",
     description:
-      "I design user-friendly payment pages to ensure a seamless and efficient payment processing experience for customers on InfoGate.Net platforms.",
+      "User-friendly payment pages to ensure a seamless and efficient payment processing experience for customers on InfoGate.Net platforms.",
     tags: ["HTML", "CSS", "SQL"],
     imageUrl: plan,
     url: "https://www.infogatenet.com/",
@@ -126,7 +126,7 @@ export const projectsData = [
   {
     title: "API's and Backend for InfoGate.Net",
     description:
-      "I establish vital connections for our services by interfacing with APIs (custom and payment gateways). I also manage the backend on Azure.",
+      "Vital connections for our services by interfacing with APIs (custom and payment gateways). Managing the backend on Azure.",
     tags: ["HTML", "CSS", "SQL", "JavaScript", "Azure Services"],
     imageUrl: payment,
     url: "https://www.infogatenet.com/",
